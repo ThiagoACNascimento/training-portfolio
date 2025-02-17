@@ -1,0 +1,44 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2.50rem 1.25rem;
+}
+
+.header-menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.header-menu a{
+  display: block;
+  padding: .625rem 1.25rem;
+  text-transform: uppercase;
+}
+
+@media (max-width:800px){
+  .header{
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .header-menu a{
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: transparent solid 2px;
+  }
+
+  .header-menu a:hover{
+    border: black solid 2px;
+  }
+}
+
+@media (max-width: 500px){
+  .header-menu{
+    justify-content: center;
+  }
+}
+
