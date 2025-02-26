@@ -1,6 +1,11 @@
 body{
   font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
   margin: 0rem;
+  margin-bottom: 1000px;
+}
+
+h1,h2,h3,p{
+  margin: 0;
 }
 
 ul{
@@ -17,4 +22,20 @@ a{
 img{
   max-width: 100%;
   display: block;
+}
+
+.subtitle{
+  font-size: 8rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch;
+}
+
+@media (max-width: 800px){
+  .subtitle{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
 }
